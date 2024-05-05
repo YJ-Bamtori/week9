@@ -1,0 +1,334 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+
+*{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight:400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  transition: all 0.8s ease-in-out  ;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 700px 1fr;
+  row-gap:20px;
+  grid-template-columns: 300px 1fr 1fr 300px;
+  column-gap: 10px;
+  }
+  
+.logo{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  }
+.logo img{
+  padding-top:50px;
+}
+ .content{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display:flex;
+  } 
+
+  .x {
+    width:100%;
+    display: flex;
+    flex-direction: column; /* 아이템들을 세로 방향으로 정렬하기 위해 */
+    justify-content: center; /* 수직으로 중앙 정렬 */
+  }
+
+p.title{
+  font-size: 48px;
+  font-weight:600;
+
+}
+.button img{
+  opacity:30%;
+  transition: all 0.2s ease-out;
+}
+.button img:hover{
+  opacity:100%;
+}
+
+
+ .cardtag{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display:flex;
+  justify-content: flex-end;
+
+ }
+
+  .switch{
+    transition: transform 0.8s ease-in-out;
+   }
+
+   .switch.rotate{
+    transform: rotateY(180deg);   }
+
+ 
+  
+
+  .card{
+  display:block;
+  width: 440px;
+  height: 700px;
+  /* background: linear-gradient(123.83deg, #9B3DE5 14.68%, #7D3AB1 85.32%); */
+  background-image:linear-gradient(123.83deg, #9B3DE5 14.68%, #7D3AB1 85.32%);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+ }
+
+.switchback{
+  transform: rotateY(90deg); 
+}
+
+.back{
+  display:none;
+  width: 440px;
+  height: 700px;
+ }
+
+.brand{
+  opacity: 0;
+  float:right;
+  margin-right: 10%;
+  margin-top: 12%;
+  transform: rotateY(180deg);
+  transition: all 0.3s ease-in;
+}
+
+.line{
+ height:100%;
+ width:18%;
+ margin-left:15%;
+background: linear-gradient(178.21deg, #7C4AA4 23.93%, #6E369A 76.07%);
+float:left;
+}
+
+.sline{
+float:right;
+width: 200px;
+height: 55px;
+background: linear-gradient(90deg, #8047AB 0%, #6E369A 100%);
+margin-top:50%;
+margin-right:11%;
+}
+
+.text{
+  color:#492963;
+  float:right;
+  margin-right:11%;
+  margin-top  :2%;
+  transform: rotateY(180deg);
+  
+}
+.text span{
+  
+  padding-right:100%;
+}
+
+
+img.tag{
+  margin-left:50%;
+  margin-top:10%;
+  
+}
+
+.name{
+  display:flex;
+  justify-content: flex-end;
+  margin-right:10%;
+  margin-top: 115%;
+  transition: all 0.3s ease-in;
+}
+.name p{
+  font-size:22px;
+  font-weight: 500;
+  color:#4D0089;
+}
+
+
+
+
+
+.button{
+  display: flex;
+  justify-content: flex-end; /* 이미지를 우측으로 정렬 */
+}
+
+
+ .bartag{
+  position: fixed;
+
+  width:100vw;
+  height:5px;
+  background-color: #E7E7E7;
+ }
+
+ .bar{
+  position: fixed;
+  width:25vw;
+  height:100%;
+  background-color: #0088FF;
+  transition: all 0.6s ease-out;
+ }
+ .load{
+  display: flex;
+  align-items: flex-end;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+ } 
+
+
+.boxbutton{
+  display:none;
+
+}
+
+.box{
+  margin-right: 5%;
+  width:30%;
+  height:60px;
+  border: 1px solid #C3C3C3; 
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+.box:last-child{
+  margin-right: 0px;
+}
+
+.box.selected{
+  border: 1px solid #2F80ED;
+  background-color: #D5E6FB;
+
+}
+
+
+
+
+/* input text */
+input[type=text] {
+  display:none;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color: rgb(233, 233, 233);
+}
+
+
+ /* input range */
+ input[type=range] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E8E8E8;
+  border-radius: 50px;
+  border: 0px solid #8A8A8A;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #0088FF;
+  border: 0px solid #0088FF;
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  background: #0088FF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E8E8E8;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E8E8E8;
+  border-radius: 50px;
+  border: 0px solid #8A8A8A;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #0088FF;
+  border: 0px solid #0088FF;
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  background: #0088FF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #E8E8E8;
+  border: 0px solid #8A8A8A;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E8E8E8;
+  border: 0px solid #8A8A8A;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #0088FF;
+  border: 0px solid #0088FF;
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  background: #0088FF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #E8E8E8;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E8E8E8;
+}

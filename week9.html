@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+
+    <div class="logo">
+    <a href="#"> <img src="logo.png" alt="logo"></a>
+    </div>
+
+    <div class="content">
+      <!-- 정렬용 -->
+        <div class="x"> 
+
+            <p class="title">카드색상을 선택해주세요.</p>
+            <input type="range" min="1" max="4" step="1">
+            <input type="text" placeholder="3자 ~ 16자 사이로 적어주세요.">
+            <!-- 3자~16자 사이로 안적으면 안넘어가게 -->
+            <div class="boxbutton">
+            <div class="box">mastercard</div>
+            <div class="box">VISA</div>
+            <div class="box">없음</div>
+            </div>  
+
+            <div class="button">
+            <img src="button.png" alt="button"  width="80px" height="80px"> 
+            </div>
+            
+          
+            
+        </div> 
+    </div>
+
+    <div class="cardtag">
+      <div class="switch">
+         <div class="card">
+         
+          <div class="front">
+            <img class="tag" src="card1.png" alt="tag">
+            <div class="name"><p></p></div> 
+          </div>
+
+          
+          <div class="back">
+            <img class="brand" src="card2.png" alt="mastercard">
+            <div class="line"></div>
+            <div class="sline"></div>
+            <div class="text"><span>EXP</span><span>CVC</span></div>
+          </div>
+        </div>
+
+
+        
+         </div>
+      </div>
+    </div>
+
+
+    <div class="load">
+    <div class="bartag">
+      <div class="bar"></div>
+    </div>
+
+   
+
+</div>
+
+
+<script src="principle.js"></script>  
+
+</body>
+</html>
